@@ -33,9 +33,9 @@ jobs:
       - name: Debug
         id: debug
         run: |
-          echo ${{ env.sec }}
-          echo "${{ env.sec }}"
-          echo '${{ env.sec }}'
+          echo ${{ secrets.JWT_KEY }} > .env.prod
+          echo "${{ secrets.JWT_KEY }}" > .env.prod
+          echo '${{ secrets.JWT_KEY }}' > .env.prod
 
       # - name: Login to Amazon ECR
       #   id: login-ecr
