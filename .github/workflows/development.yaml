@@ -12,7 +12,6 @@ env:
   ECS_TASK_DEFINITION_FAMILY: "HBP-Dev-TD"
   ECS_TASK_DEFINITION_PATH: "task-definition.json"
   CONTAINER_NAME: "HBP-Container"
-  sec: "Il0Op6boKSKLEDpNUFHboR573jYUQiwMp6wSJwEd/fE7Las42avAohIp8oHxEOuJTz6XX0NNlXFnFtQfbRCgSoT6zzIk9kLcMNOzQSwvJpnK0QHRGL0hRQQ1R+wr4Q/ZkWGaR1AQLvr0PHnSGxaRQyKOd6b9FOwC8KvIbRcQOIgUHRxAqc/syS/hVYtzMNAEVCdFzrgt8JK8j6zHyIjRCJW+KxJJ6hbBXm8H/A=="
 
 jobs:
   deploy:
@@ -33,9 +32,8 @@ jobs:
       - name: Debug
         id: debug
         run: |
-          echo ${{ secrets.JWT_KEY }} > .env.prod
-          echo "${{ secrets.JWT_KEY }}" > .env.prod
-          echo '${{ secrets.JWT_KEY }}' > .env.prod
+          echo ${{ secrets.JWT_KEY == "asd==" }}
+          echo ${{ secrets.JWT_KEY == 'asd==' }}
 
       # - name: Login to Amazon ECR
       #   id: login-ecr
