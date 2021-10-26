@@ -1,4 +1,24 @@
 {
-  "eslint.validate": ["javascript", "typescript"],
+  "cSpell.words": [
+    "APNG",
+    "HASURA",
+    "Isrc",
+    "Spotify",
+    "bytea",
+    "deduped",
+    "heroicons",
+    "hitpiece",
+    "ilike",
+    "semibold",
+    "unlockable",
+    "uuidv"
+  ],
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "editor.formatOnSave": true
 }
