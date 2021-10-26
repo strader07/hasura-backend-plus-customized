@@ -32,7 +32,6 @@ jobs:
       - name: Debug
         id: debug
         run: |
-          echo ${{ secrets.JWT_KEY == "asd==" }}
           echo ${{ secrets.JWT_KEY == 'asd==' }}
 
       # - name: Login to Amazon ECR
